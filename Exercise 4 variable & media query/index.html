@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+
+
+        :root {
+            --variable1: blue;
+            --variable2: red;
+            --variable3: green;
+        }
+
+
+        .hello1 {
+            color: var(--variable1);
+
+        }
+
+        .hello2 {
+            background-color: var(--variable2);
+        }
+
+        .hello3 {
+            color: var(--variable3);
+        }
+
+
+        p {
+            background-color: var(--variable1);
+        }
+
+        @media (max-width:600px) {
+            p {
+                background-color: green;
+            }
+
+            .hello {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="hello">
+        <button class="hello1">hello 1</button>
+        <button class="hello2">hello 2</button>
+        <button class="hello3">hello 3</button>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quod.</p>
+</body>
+
+</html>
