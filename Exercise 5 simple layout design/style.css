@@ -1,0 +1,126 @@
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     :root {
+
+         --main-background-color: #121212;
+         --text-color: #e0e0e0;
+         --text-muted: #a0a0a0;
+         --accent-color: #00e5ff;
+         --box-background: #1e1e1e;
+
+
+
+     }
+
+     body {
+         background-color: var(--main-background-color);
+         color: var(--text-color);
+         font-family: "poppins", monospace;
+
+     }
+
+     header {
+         position: sticky;
+         top: 0;
+     }
+
+
+
+     .navbar {
+         display: flex;
+         gap: 30px;
+         padding: 20px;
+         background-color: var(--main-background-color);
+         border-bottom: 2px solid var(--accent-color);
+         justify-content: flex-end;
+
+     }
+     .navbar li a:hover{
+        color: var(--accent-color);
+     }
+
+     ul {
+         list-style: none;
+
+     }
+
+     a {
+         text-decoration: none;
+         color: white;
+         font-weight: bold;
+
+     }
+
+     .boxes {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+
+
+     .box {
+         background-color: var(--box-background);
+         width: 45%;
+         margin: 10px;
+         padding: 10px;
+         border: 5px solid var(--accent-color);
+         text-align: left;
+     }
+
+     img {
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         border-radius: 50%;
+         cursor: pointer;
+
+     }
+
+     footer {
+         background-color: var(--main-background-color);
+         color: var(--text-muted);
+         border-top: 2px solid var(--accent-color);
+         text-align: center;
+         padding: 20px;
+
+     }
+
+     .footer-links a {
+         color: var(--text-color);
+         margin: 0 10px;
+         text-decoration: none;
+         font-weight: bold;
+         font-size: 14px;
+     }
+
+     .footer-links a:hover {
+         color: var(--accent-color);
+
+     }
+
+     .copyright {
+         margin-top: 10px;
+         font-size: 12px;
+         opacity: 0.8;
+     }
+
+     @media screen and (max-width: 768px) {
+
+        .box
+        { 
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .navbar{
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+        
+     }
